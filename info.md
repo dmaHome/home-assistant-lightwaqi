@@ -8,7 +8,11 @@
 ## Description :mag:
 
 This project is a light implementation of the WAQI component that allows to specify a specific 
-station using its identifier. It has mainly be tested with stations located in France.
+station using its identifier. It has mainly be tested with stations located in France. It publishes
+information from the [World Air Quality Index](http://aqicn.org/).
+
+This project is based on the official [WAQI component](https://www.home-assistant.io/components/waqi/) 
+of [home assistant](https://www.home-assistant.io).
 
 ## Configuration :gear:
 
