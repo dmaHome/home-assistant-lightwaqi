@@ -1,0 +1,12 @@
+{
+  "domain": "lightwaqi",
+  "name": "A light WAQI",
+  "documentation": "https://github.com/dmaHome/home-assistant-lightwaqi",
+  "requirements": [
+    "waqiasync==1.0.0"
+  ],
+  "dependencies": [],
+  "codeowners": [
+    "@dmaHome-git"
+  ]
+}

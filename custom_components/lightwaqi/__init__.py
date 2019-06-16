@@ -1,0 +1,1 @@
+"""A light implementation of the waqi component based on the official one."""
