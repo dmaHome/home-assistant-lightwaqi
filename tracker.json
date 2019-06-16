@@ -1,0 +1,15 @@
+{
+  "sensor.lightwaqi": {
+    "changelog": "https://raw.githubusercontent.com/dmaHome/home-assistant-lightwaqi/releases/latest",
+    "local_location": "/custom_components/lightwaqi/sensor.py",
+    "remote_location": "https://raw.githubusercontent.com/dmaHome/home-assistant-lightwaqi/master/custom_components/lightwaqi/sensor.py",
+    "resources": [
+      "https://raw.githubusercontent.com/dmaHome/home-assistant-lightwaqi/master/custom_components/lightwaqi/sensor.py",
+      "https://raw.githubusercontent.com/dmaHome/home-assistant-lightwaqi/master/custom_components/lightwaqi/manifest.json",
+      "https://raw.githubusercontent.com/dmaHome/home-assistant-lightwaqi/master/custom_components/lightwaqi/__init__.py"
+    ],
+    "updated_at": "2019-06-16",
+    "version": "1.0.0",
+    "visit_repo": "https://github.com/dmaHome/home-assistant-lightwaqi"
+  }
+}
