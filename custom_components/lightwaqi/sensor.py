@@ -70,8 +70,7 @@ async def async_setup_platform(hass, config, async_add_entities,
             station = await client.get_station_by_number(station_id)
             _LOGGER.debug("The following station was returned: %s", station)
             waqi_sensor = WaqiSensor(client, station)
-            if {waqi_sensor.uid,
-                waqi_sensor.url,
+            if {waqi_sensor.idx,
                 waqi_sensor.station_name}:
                 dev.append(waqi_sensor)
     except (aiohttp.client_exceptions.ClientConnectorError,
@@ -90,7 +89,7 @@ class WaqiSensor(Entity):
         try:
             self.idx = station['idx']
         except (KeyError, TypeError):
-            self.uid = None
+            self.idx = None
 
         try:
             self.station_name = station['station']['name']
@@ -107,7 +106,7 @@ class WaqiSensor(Entity):
         """Return the name of the sensor."""
         if self.station_name:
             return 'WAQI {}'.format(self.station_name)
-        return 'WAQI {}'.format(self.uid)
+        return 'WAQI {}'.format(self.idx)
 
     @property
     def icon(self):
